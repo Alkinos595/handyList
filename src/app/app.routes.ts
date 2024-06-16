@@ -11,7 +11,7 @@ export const routes: Routes = [
 	{
 		path: "",
 		component: HomeComponent,
-		children:[
+		children: [
 			{
 				path: "",
 				component: InprogressComponent
@@ -19,26 +19,23 @@ export const routes: Routes = [
 			{
 				path: "completed",
 				component: CompletedComponent
-			},
+			}
 		]
 	},
 	{
 		path: "profile",
-		component: ProfileComponent,
-		children:[
-			{
-				path: "profile/userDate",
-				component: UserdataComponent
-			},
-			{
-				path: "profile/friends",
-				component: FriendsComponent
-			},
-			{
-				path: "profile/settings",
-				component: SettingsComponent
-			},
-
-		]
+		component: ProfileComponent
 	},
+	{
+		path: "userdata",
+		component: UserdataComponent
+	},
+	{
+		path: "friends",
+		component: FriendsComponent
+	},
+	{
+		path: "settings",
+		component: SettingsComponent
+	}
 ];

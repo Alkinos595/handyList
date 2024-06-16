@@ -1,17 +1,18 @@
-<ul class="list-group w-50 mx-auto">
-	<a href="#" class="navbar-brand mx-0" routerLink="/profile/Userdata">
-		<li class="list-group-item list-group-item-dark d-flex justify-content-center align-items-center  mt-3 mb-2 ">
-			Userdata
-		</li>
-	</a>
-	<a href="#" class="navbar-brand mx-0" routerLink="/profile/friends">
-		<li class="list-group-item list-group-item-dark d-flex justify-content-center align-items-center my-2">
-			Add friends
-		</li>
-	</a>
-	<a href="#" class="navbar-brand mx-0" routerLink="/profile/settings">
-		<li class="list-group-item list-group-item-dark d-flex justify-content-center align-items-center my-2">
-			Settigs
-		</li>
-	</a>
-</ul>
+<div class="container fluid">
+	<div class="row">
+		<div class="col-md-8 offset-md-2 d-flex flex-column mb-2">
+			<button type="button" class="btn btn-dark p-2 text-center mb-2" routerLink="/userdata">
+				<i class="fa-regular fa-id-badge text-white display-4"></i>
+				<h5 class="text-white">Userdata</h5>
+			</button>
+			<button type="button" class="btn btn-dark p-2 text-center mb-2" routerLink="/friends">
+				<i class="fa-solid fa-user-plus text-white display-4"></i>
+				<h5 class="text-white">Add friends</h5>
+			</button>
+			<button type="button" class="btn btn-dark p-2 text-center mb-2" routerLink="/settings">
+				<i class="fa-solid fa-gear text-white display-4"></i>
+				<h5 class="text-white">Settings</h5>
+			</button>
+		</div>
+	</div>
+</div>
