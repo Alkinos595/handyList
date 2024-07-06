@@ -1,0 +1,30 @@
+<div class="container fluid">
+	<div class="row">
+		<div class="col-md-8 offset-md-2 d-flex flex-column mb-2">
+			<div class="d-flex justify-content-between align-items-center my-4">
+				<a routerLink="/profile" class="mb-0">
+					<i class="fa-solid fa-arrow-left h6"> Go back</i>
+				</a>
+			</div>
+			<form>
+				<div class="mt-0">
+					<h3 class="text-center">Login</h3>
+				</div>
+				<div class="mb-2">
+					<label for="inputUserName" class="form-label">UserName</label>
+					<input type="text" class="form-control" id="inputUserName" aria-describedby="UsernameHelp" placeholder="Enter UserName">
+					<small id="UserName" class="form-text text-muted">We'll never share your Username with anyone else.</small>
+				</div>
+				<div class="mb-2">
+					<label for="inputPassword" class="form-label">Password</label>
+					<input type="password" class="form-control" id="inputPassword" aria-describedby="PasswordHelp" placeholder="Enter Password">
+					<small id="PasswordHelp" class="form-text text-muted">We'll never share your Password with anyone else.</small>
+				</div>
+				<div class="d-flex flex-column justify-content-center align-items-center">
+					<button type="submit" class="btn btn-primary mt-3 w-50">Login</button>
+                    <small id="RegisterdHelp" class="form-text text-center mb-5">Don't have an account? <a href="" routerLink="/register" >Sing up</a></small>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
